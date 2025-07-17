@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'sans-serif';
+    margin: 0;
+    background: #282d35;
+    overflow: hidden;
+}
+
+.header {
+    height: 91px;
+    background: #21222a;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    position: relative;
+    top: 31px;
+    left: 26px;
+}
+
+.nav-list-item {
+    margin-left: 7px;
+    color: #61dafb;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.main {
+    height: 459px;
+    color: #fff;
+}
+
+.heading {
+    font-size: 41px;
+    position: relative;
+    left: 27px;
+}
+
+.ul-list {
+
+}
+
+.ul-list-item {
+    
+}
