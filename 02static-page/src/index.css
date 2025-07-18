@@ -33,18 +33,32 @@ body {
 .main {
     height: 459px;
     color: #fff;
+    padding: 60px 30px;
+    /* background: url(src/images/react.svg) no-repeat center; */
+    background-image: url(src/images/react-grey-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-x: center;
+    background-position-y: center; */
+    background-size: 200px;
 }
 
-.heading {
-    font-size: 41px;
-    position: relative;
-    left: 27px;
+.main > h1 {
+    margin: 0;
+    font-size: 2.4rem;
 }
 
 .ul-list {
-
+    margin-top: 35px;
+    max-width: 400px;
 }
 
-.ul-list-item {
-    
+.ul-list > li {
+    padding-block: 10px;
+    line-height: 19px;
+}
+
+.ul-list > li::marker {
+    color: #61dafb;
+    font-size: 1.5rem;
 }
