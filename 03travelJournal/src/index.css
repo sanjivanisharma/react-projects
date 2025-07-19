@@ -28,6 +28,7 @@ body {
 
 .journal-entry {
   display: flex;
+  margin-bottom: 36px;
 }
 
 .journal-entry .marker {
