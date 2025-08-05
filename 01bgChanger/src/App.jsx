@@ -1,10 +1,27 @@
+import { useState } from "react"
+import { colors } from "./colors"
+
 export default function App() {
+  const [background, setBackground] = useState("olive")
+
+  const colorElements = colors.map(col => {
+    const styles = {
+      backgroundColor: col.backGroundColor,
+      color: col.color
+    }
+    return <button
+      className="color-tab"
+      style={styles}
+      onClick={() => setBackground(col.backGroundColor)}
+    >
+      {col.name}
+    </button>
+  })
+
   return (
-    <main>
+    <main style={{backgroundColor: background}}>
       <section className="container">
-        <div className="color-tab red">Red</div>
-        <div className="color-tab green">Green</div>
-        <div className="color-tab blue">Blue</div>
+        {colorElements}
       </section>
     </main>
   )
